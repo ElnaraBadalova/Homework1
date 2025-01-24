@@ -10,14 +10,17 @@ namespace _7.h
     {
         static void Main(string[] args)
         {
-            int x = 56;
+            Console.WriteLine("ili daxil et");
+            int a = int.Parse(Console.ReadLine());
 
-            int a, b;
+            if (a % 4 ==0 && a % 100 > 0 || a % 400 == 0)
+            { Console.WriteLine("leap year"); }
 
-            a = x / 10;
-            b = x % 10;
+            else 
+                    { Console.WriteLine("is not leap year"); }
 
-            Console.WriteLine(a + b);
+
+            
         }
 
     }
